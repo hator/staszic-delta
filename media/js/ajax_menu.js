@@ -1,6 +1,6 @@
 $(document).ready( function (){ 
 	$("#categories li.category").click( function(event){
-		if( $(event.target).hasClass('used')) 
+		if( $(event.target).hasClass('used') || $(event.target).parent().hasClass('article')) 
 			return true;
 		
 		jQuery.getJSON( "index.php?a=category&id="+$(event.target).prop("id"), function(data) {
