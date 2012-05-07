@@ -126,7 +126,7 @@ div.field {
 }
 
 #sidebar li ul {
-	font-size: 75%;
+	font-size: 85%;
 }
 
 /************** MAIN ******************/
@@ -146,4 +146,17 @@ div.field {
 	background-image: url('http://amleather.pl/temp/asiajek/media/img/light-bulb.png');
 	
 	margin: 0 auto;
+}
+/**************************************/
+#promotext ul {
+	list-style-type: circle;
+	margin-left: 20px;
+}
+
+#promotext strong {
+	font-weight: bold;
+}
+
+#promotext p {
+	margin: 20px 0;
 }
