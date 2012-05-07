@@ -20,6 +20,8 @@ $(document).ready( function (){
 				tagsToAppend += '</ul>';
 				$(event.target).append( tagsToAppend );
 				
+				$(event.target).children().hide().slideDown('slow','swing');
+				
 				$(event.target).addClass('used');
 			}
 
