@@ -127,6 +127,7 @@ div.field {
 
 #sidebar li ul {
 	font-size: 85%;
+	margin-bottom: 4px;
 }
 
 /************** MAIN ******************/
@@ -159,4 +160,18 @@ div.field {
 
 #promotext p {
 	margin: 20px 0;
+}
+
+/**************************************/
+#article_content h4 {
+	text-weight: bold;
+	font-size: 120%;
+}
+
+#article_content article {
+	margin: 20px 0;
+}
+
+#article_content article p {
+	margin: 10px;
 }

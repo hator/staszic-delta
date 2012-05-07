@@ -1,7 +1,16 @@
 $(document).ready( function (){ 
 	$("#categories li.category").click( function(event){
-		if( $(event.target).hasClass('used') || $(event.target).parent().hasClass('article')) 
+		if($(event.target).parent().hasClass('article')) 
 			return true;
+		else if( $(event.target).hasClass('hidden') ) {
+			$(event.target).children().slideDown('slow','swing');
+			$(event.target).removeClass('hidden');
+			return false;
+		} else if( $(event.target).hasClass('used') ) {
+			$(event.target).children().slideUp('slow','swing');
+			$(event.target).addClass('hidden');
+			return false;
+		}
 		
 		jQuery.getJSON( "index.php?a=category&id="+$(event.target).prop("id"), function(data) {
 			if( data['categories'] || data['articles'] ) {
