@@ -1,0 +1,150 @@
+html {
+	background-color: #fff;
+}
+
+body {
+	width: 996px;
+	margin: 15px auto;
+	
+	color: #222;
+	font-family: Verdana, sans-serif;
+}
+
+#container {
+	display: table;
+}
+
+#sidebar, #main {
+	display: table-cell;
+	vertical-align: top;
+}
+
+#sidebar {
+	width: 380px;
+	
+	padding-right: 10px;
+	
+	text-align: right;
+	font-size: 30px;
+	white-space: nowrap;
+}
+
+#main {
+	/*width: 616px;*/
+	width: 100%;
+	padding: 12px;
+	
+	border: 1px solid #aaa;
+	box-shadow: -4px 4px 3px #000;
+	
+	background-color: #fff;
+	
+	font-family: 'Times New Roman', serif;
+}
+
+footer {
+	margin-top: 20px;
+	text-align: center;
+	vertical-align: middle;
+	clear: both;
+	font-size: 15px;
+}
+
+/**************************************/
+code, input {
+	color: inherit;
+	border: 1px solid #999;
+	background-color: #ccc;
+	font-family: Consolas, monospace;
+}
+
+code.block {
+	display: block;
+	margin: 5px 12px;
+	padding: 5px;
+	overflow: hidden;
+	white-space: pre-wrap;
+}
+
+code.inline {
+	display: inline;
+	padding: 0 3px;
+}
+
+/*****************************/
+h2 {
+	margin: 2px 0;
+	color: #335;
+	font-size: 30px;
+	text-align: center;
+}
+
+h3 {
+	margin-top: 15px;
+	margin-bottom: 7px;
+	font-size: 20px;
+	color: #335;
+}
+
+a {
+	text-decoration: underline;
+}
+
+/**************************************/
+input {
+	margin-left: 5px;
+	display: table-cell;
+}
+
+label { 
+	display: table-cell;
+}
+
+input:focus {
+	border-color: #666;
+}
+
+div.field {
+	display: table-row;
+	padding:100px;
+}
+
+/************* SIDEBAR ****************/
+#sidebar li, #sidebar li a {
+	margin-bottom: 3px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#sidebar li:hover, a:hover {
+	color: #224;
+}
+
+#sidebar li.used:hover {
+	color: inherit;
+}
+
+#sidebar li .article {
+	text-decoration: underline;
+}
+
+#sidebar li ul {
+	font-size: 75%;
+}
+
+/************** MAIN ******************/
+#main p {
+	font-size: 12pt;
+	text-indent: 3ex;
+	margin: 5px 0;
+	line-height: 110%;
+}
+
+/***************************************/
+#bulb {
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: 0 auto;
+	background: url('../img/light-bulb-off.png');
+}
