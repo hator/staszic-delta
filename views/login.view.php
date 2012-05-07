@@ -18,6 +18,7 @@
 				<div class="field"><label for="email">Login:</label><input type="email" id="email" name="email"></div>
 				<div class="field"><label for="pass">Hasło:</label><input type="password" id="pass" name="pass"></div>
 				<div class="field"><input type="submit" value="Loguj!"></div>
+				<p>Login testowy: test@test.te <br> Hasło: test@test.te</p>
 			</form>
 		</section>
 <?php include_once('footer.view.php'); ?>

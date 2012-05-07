@@ -60,12 +60,13 @@ CREATE TABLE IF NOT EXISTS `users` (
   `admin_level` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=3;
 
 /* Zrzut danych tabeli `users` */
 
 INSERT INTO `users` (`id`, `passwd`, `email`, `admin_level`) VALUES
-(1, \'63d63e723e89b48bc366e235ea1d38b0d20a65c677f7f618ef401506d673259a\', \'jasium.ready@gmail.com\', 3);
+(1, \'63d63e723e89b48bc366e235ea1d38b0d20a65c677f7f618ef401506d673259a\', \'jasium.ready@gmail.com\', 3),
+(2, \'451d0af9ad5c8262917d685f4e4d859f6dbc03c302953b83f298c9120b91e34f\', \'test@test.te\', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
